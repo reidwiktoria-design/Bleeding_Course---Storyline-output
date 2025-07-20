@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tincan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://projecttincan.com/tincan.xsd">
+	<activities>
+		<activity id="http://6IJMSJ7HBqi_course_id" type="http://adlnet.gov/expapi/activities/course">
+			<name lang="und">Bleeding_Course</name>
+			<description lang="und" />
+			<launch lang="und">index_lms.html</launch>
+		</activity>
+		<activity id="http://6IJMSJ7HBqi_course_id/691xgrs7HSr" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">INTRO</name>
+			<description lang="und">INTRO</description>
+		</activity>
+		<activity id="http://6IJMSJ7HBqi_course_id/6lch2uruwlw" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">MENU</name>
+			<description lang="und">MENU</description>
+		</activity>
+		<activity id="http://6IJMSJ7HBqi_course_id/6i6uobXcIT7" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Теорія: Меню розділів</name>
+			<description lang="und">Теорія: Меню розділів</description>
+		</activity>
+		<activity id="http://6IJMSJ7HBqi_course_id/6bdgx0OaMAP" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">M — Масивна кровотеча</name>
+			<description lang="und">M — Масивна кровотеча</description>
+		</activity>
+		<activity id="http://6IJMSJ7HBqi_course_id/6feZMg9PM0G" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">A — Дихальні шляхи</name>
+			<description lang="und">A — Дихальні шляхи</description>
+		</activity>
+		<activity id="http://6IJMSJ7HBqi_course_id/6fzXHCEdSKs" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">R — Дихання</name>
+			<description lang="und">R — Дихання</description>
+		</activity>
+		<activity id="http://6IJMSJ7HBqi_course_id/6Y5yBluZCM6" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">C — Циркуляція</name>
+			<description lang="und">C — Циркуляція</description>
+		</activity>
+		<activity id="http://6IJMSJ7HBqi_course_id/6VTQXFZ8pDY" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">H — Гіпотермія/Травма голови</name>
+			<description lang="und">H — Гіпотермія/Травма голови</description>
+		</activity>
+		<activity id="http://6IJMSJ7HBqi_course_id/6SDjhU8hSDA" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Сценарії: Меню</name>
+			<description lang="und">Сценарії: Меню</description>
+		</activity>
+		<activity id="http://6IJMSJ7HBqi_course_id/6B4IEEkLdFy" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Сценарій 1 — Під вогнем</name>
+			<description lang="und">Сценарій 1 — Під вогнем</description>
+		</activity>
+		<activity id="http://6IJMSJ7HBqi_course_id/5UwzcH6ojZ4" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Сценарій 2 — Травма грудної клітки</name>
+			<description lang="und">Сценарій 2 — Травма грудної клітки</description>
+		</activity>
+		<activity id="http://6IJMSJ7HBqi_course_id/5gh8C9nuOvo" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Сценарій 3 — Гіпотермія</name>
+			<description lang="und">Сценарій 3 — Гіпотермія</description>
+		</activity>
+		<activity id="http://6IJMSJ7HBqi_course_id/6HLBxHBMrve" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Тест: Інструкція</name>
+			<description lang="und">Тест: Інструкція</description>
+		</activity>
+		<activity id="http://6IJMSJ7HBqi_course_id/5yrt1a6rX7p" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Тест: Питання 1</name>
+			<description lang="und">Тест: Питання 1</description>
+		</activity>
+		<activity id="http://6IJMSJ7HBqi_course_id/5twzmCdOwUG" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Тест: Питання 2</name>
+			<description lang="und">Тест: Питання 2</description>
+		</activity>
+		<activity id="http://6IJMSJ7HBqi_course_id/6RiODCoGjSM" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Тест: Питання 3</name>
+			<description lang="und">Тест: Питання 3</description>
+		</activity>
+	</activities>
+</tincan>

@@ -61,7 +61,7 @@ var CLOUDURL = "__CLOUDURL__";
 
 var blnDebug = true;                        //set this to false if you don't want the overhead of recording debug information
 
-var strLMSStandard = "SCORM2004";    //used in versions that support multiple standards, set to "NONE" to default
+var strLMSStandard = "TCAPI";    //used in versions that support multiple standards, set to "NONE" to default
                                             //to StandAlone mode. Possible values = "AUTO", "NONE", "SCORM", "AICC", "SCORM2004", "TCAPI", "CMI5"
                                             //AUTO mode will automatically determine the best standard to use
                                             //(it first tries AICC based on "AICC_URL" query param, then TCAPI and CMI5 based on "endpoint" and other
@@ -27467,10 +27467,10 @@ var Cmi5;
     };
 }());
 /* declare globals that are set via Desktop token replacement for configuration */
-var TC_COURSE_ID = "__TC_COURSE_ID__";
-var TC_COURSE_NAME = "__TC_COURSE_NAME__";
-var TC_COURSE_DESC = "__TC_COURSE_DESC__";
-var TC_RECORD_STORES = "__TC_RECORD_STORES__";
+var TC_COURSE_ID = "_6IJMSJ7HBqi_course_id";
+var TC_COURSE_NAME = "Bleeding_Course";
+var TC_COURSE_DESC = "Bleeding_Course";
+var TC_RECORD_STORES = "[]";
 
 /* declare other globals we'll use */
 var TCAPI_STATUS = "",
