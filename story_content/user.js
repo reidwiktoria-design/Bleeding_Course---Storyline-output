@@ -2,23 +2,38 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5Z7Be3JKNQT":
+      case "6gbF8xqhkDc":
         Script1();
         break;
-      case "6nSKVGYFs88":
+      case "5p55ysxxJMn":
         Script2();
         break;
-      case "5w8X9lnkhtx":
+      case "5WEHjgjakrM":
         Script3();
         break;
-      case "6enLTEu0Lmt":
+      case "5sLNaH1sMI4":
         Script4();
         break;
-      case "6UYG3NdXqj7":
+      case "6kJqPpNudda":
         Script5();
         break;
-      case "6GReFJsUSYb":
+      case "5dZ0Tuo3g3A":
         Script6();
+        break;
+      case "6DDR7876gl3":
+        Script7();
+        break;
+      case "67K4bPNJudR":
+        Script8();
+        break;
+      case "6enL8m41MIG":
+        Script9();
+        break;
+      case "6o20DOePC92":
+        Script10();
+        break;
+      case "6SAVDdOAuUl":
+        Script11();
         break;
   }
 }
@@ -64,20 +79,26 @@ function Script2()
   var lc = callsign.toLowerCase();
   if (forbidden.some(word => lc.includes(word))) return false;
 
+  // 7. Має бути хоча б одна голосна (українська)
+  if (!/[аеєиіїоуюяАЕЄИІЇОУЮЯ]/.test(callsign)) return false;
+
+  // 8. Заборона на дивні комбінації
+  const suspicious = ["ьь", "тм", "рг", "пщ", "щг", "гг", "цц"];
+  if (suspicious.some(pair => lc.includes(pair))) return false;
+
   return true;
 }
 
-// --- Основна логіка ---
 var player = GetPlayer();
 var callsign = player.GetVar("UserName").trim();
 var isValid = validateCallsign(callsign);
 
 if (isValid) {
-  player.SetVar("Variable1", false); // все добре
+  player.SetVar("Variable1", false);
 } else {
-  player.SetVar("Variable1", true);  // є помилка
+  player.SetVar("Variable1", true);
   var suggested = generateCallsign();
-  player.SetVar("SuggestedName", suggested); // відображай у шарі або десь ще
+  player.SetVar("SuggestedName", suggested);
 }
 
 }
@@ -151,6 +172,91 @@ player.SetVar("currentTime", hours + ":" + minutes);
 }
 
 function Script6()
+{
+  var player = GetPlayer();
+var now = new Date();
+
+// Дата
+var dd = String(now.getDate()).padStart(2, '0');
+var mm = String(now.getMonth() + 1).padStart(2, '0');
+var yyyy = now.getFullYear();
+player.SetVar("today", dd + "." + mm + "." + yyyy);
+
+// Час
+var hours = String(now.getHours()).padStart(2, '0');
+var minutes = String(now.getMinutes()).padStart(2, '0');
+player.SetVar("currentTime", hours + ":" + minutes);
+}
+
+function Script7()
+{
+  var player = GetPlayer();
+var now = new Date();
+
+// Дата
+var dd = String(now.getDate()).padStart(2, '0');
+var mm = String(now.getMonth() + 1).padStart(2, '0');
+var yyyy = now.getFullYear();
+player.SetVar("today", dd + "." + mm + "." + yyyy);
+
+// Час
+var hours = String(now.getHours()).padStart(2, '0');
+var minutes = String(now.getMinutes()).padStart(2, '0');
+player.SetVar("currentTime", hours + ":" + minutes);
+}
+
+function Script8()
+{
+  var player = GetPlayer();
+var now = new Date();
+
+// Дата
+var dd = String(now.getDate()).padStart(2, '0');
+var mm = String(now.getMonth() + 1).padStart(2, '0');
+var yyyy = now.getFullYear();
+player.SetVar("today", dd + "." + mm + "." + yyyy);
+
+// Час
+var hours = String(now.getHours()).padStart(2, '0');
+var minutes = String(now.getMinutes()).padStart(2, '0');
+player.SetVar("currentTime", hours + ":" + minutes);
+}
+
+function Script9()
+{
+  var player = GetPlayer();
+var now = new Date();
+
+// Дата
+var dd = String(now.getDate()).padStart(2, '0');
+var mm = String(now.getMonth() + 1).padStart(2, '0');
+var yyyy = now.getFullYear();
+player.SetVar("today", dd + "." + mm + "." + yyyy);
+
+// Час
+var hours = String(now.getHours()).padStart(2, '0');
+var minutes = String(now.getMinutes()).padStart(2, '0');
+player.SetVar("currentTime", hours + ":" + minutes);
+}
+
+function Script10()
+{
+  var player = GetPlayer();
+var now = new Date();
+
+// Дата
+var dd = String(now.getDate()).padStart(2, '0');
+var mm = String(now.getMonth() + 1).padStart(2, '0');
+var yyyy = now.getFullYear();
+player.SetVar("today", dd + "." + mm + "." + yyyy);
+
+// Час
+var hours = String(now.getHours()).padStart(2, '0');
+var minutes = String(now.getMinutes()).padStart(2, '0');
+player.SetVar("currentTime", hours + ":" + minutes);
+}
+
+function Script11()
 {
   var player = GetPlayer();
 var now = new Date();
