@@ -2,22 +2,22 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5lMsznKzyE0":
+      case "5ZVMbmBzXss":
         Script1();
         break;
-      case "6ouyKLBUFpt":
+      case "6E53z67cHyg":
         Script2();
         break;
-      case "6idhCVd4AYm":
+      case "5aNj7aP8OsW":
         Script3();
         break;
-      case "6NGDkAt4zta":
+      case "5zhwulYGggT":
         Script4();
         break;
-      case "5lbZHj4CxDR":
+      case "5zas3W8Hk9l":
         Script5();
         break;
-      case "67Yg5gB6t99":
+      case "6AaIV3ap5Eh":
         Script6();
         break;
   }
@@ -84,26 +84,24 @@ if (isValid) {
 
 function Script3()
 {
-  function generateCallsign() {
-  const adjectives = ["Сміливий", "Чорний", "Сірий", "Тихий", "Швидкий",
-"Шалений", "Грізний", "Вірний", "Твердий", "Крижаний",
-"Рішучий", "Залізний", "Темний", "Холодний", "Броньований",
-"Нічний", "Зухвалий", "Дикий", "Кмітливий", "Гострий",
-"Тіньовий", "Сталевий", "Загадковий", "Бойовий", "Косий",
-"Мовчазний", "Сонний", "Блідий", "Невловимий", "Гримучий"];
-  const nouns = ["Вовк", "Тигр", "Сокіл", "Дух", "Шрам",
-"Сивий", "Грім", "Каскад", "Орел", "Карась",
-"Кабан", "Хижак", "Смерч", "Кобра", "Снайпер",
-"Відлуння", "Камінь", "Козак", "Шепіт", "Кулак",
-"Рись", "Шолом", "Кіготь", "Залп", "Шторм",
-"Омега", "Бекон", "Барс", "Бастіон", "Таран"];
-  const adj = adjectives[Math.floor(Math.random() * adjectives.length)];
-  const noun = nouns[Math.floor(Math.random() * nouns.length)];
+  function generateCallsign(gender) {
+  const maleAdjectives = ["Сміливий", "Грізний", "Швидкий", "Чорний", "Твердий"];
+  const maleNouns = ["Вовк", "Тигр", "Сокіл", "Шрам", "Хижак"];
+
+  const femaleAdjectives = ["Смілива", "Нескорена", "Тиха", "Швидка", "Чорна"];
+  const femaleNouns = ["Пантера", "Тінь", "Ластівка", "Відьма", "Рись"];
+
+  const a = gender === "female" ? femaleAdjectives : maleAdjectives;
+  const n = gender === "female" ? femaleNouns : maleNouns;
+
+  const adj = a[Math.floor(Math.random() * a.length)];
+  const noun = n[Math.floor(Math.random() * n.length)];
   return `${adj} ${noun}`;
 }
 
 var player = GetPlayer();
-var generated = generateCallsign();
+var gender = player.GetVar("Gender");
+var generated = generateCallsign(gender);
 
 player.SetVar("UserName", generated);
 player.SetVar("SuggestedName", generated);
